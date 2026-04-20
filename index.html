@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,47 +9,51 @@
   <!-- external CSS file -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+  <div class="d-flex">
+    <!-- 💡 Bulb structure start -->
+    <div class="bulb">
 
-<!-- 💡 Bulb structure start -->
-<div class="bulb">
+      <!-- glass part (এখানেই light effect দেখানো হবে) -->
+      <div class="glass" id="glass"></div>
 
-  <!-- glass part (এখানেই light effect দেখানো হবে) -->
-  <div class="glass" id="glass"></div>
+      <!-- ভিতরের support wire -->
+      <div class="support left"></div>
+      <div class="support right"></div>
 
-  <!-- ভিতরের support wire -->
-  <div class="support left"></div>
-  <div class="support right"></div>
+      <!-- filament (যেটা আসলে জ্বলে) -->
+      <div class="filament" id="filament"></div>
 
-  <!-- filament (যেটা আসলে জ্বলে) -->
-  <div class="filament" id="filament"></div>
+      <!-- bulb stem (metal part inside) -->
+      <div class="stem"></div>
 
-  <!-- bulb stem (metal part inside) -->
-  <div class="stem"></div>
+      <!-- screw base -->
+      <div class="base"></div>
 
-  <!-- screw base -->
-  <div class="base"></div>
+      <!-- নিচের black tip -->
+      <div class="tip"></div>
 
-  <!-- নিচের black tip -->
-  <div class="tip"></div>
+    </div>
+    <!-- 💡 Bulb structure end -->
 
-</div>
-<!-- 💡 Bulb structure end -->
+  </div>
 
 
-<!-- 🔘 control buttons -->
-<div class="btn_div">
+  <!-- 🔘 control buttons -->
+  <div class="btn_div">
 
-  <!-- light ON করার button -->
-  <button class="showDetails_btn" onclick="turnOn()">On করুন</button>
+    <!-- light ON করার button -->
+    <button class="showDetails_btn" onclick="turnOn()">On করুন</button>
 
-  <!-- light OFF করার button -->
-  <button class="showDetails_btn2" onclick="turnOff()">Off করুন</button>
+    <!-- light OFF করার button -->
+    <button class="showDetails_btn2" onclick="turnOff()">Off করুন</button>
 
-</div>
+  </div>
 
-<!-- JS file connect -->
-<script src="app.js"></script>
+  <!-- JS file connect -->
+  <script src="app.js"></script>
 
 </body>
+
 </html>
